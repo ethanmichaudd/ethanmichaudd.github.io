@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Ethan Michaud</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,500;0,600;1,500&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="brand"><span class="brand-pulse"></span> Ethan Michaud</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="assets/Ethan_Michaud_Resume.pdf">Resume</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="section-pad" style="padding-bottom:20px;">
+  <div class="wrap">
+    <div class="eyebrow">Selected Work</div>
+    <h1>Projects &amp; Research</h1>
+    <p style="max-width:60ch; font-size:1.05rem;">Hardware, simulation, and design work, from medical device manufacturing to cancer research.</p>
+  </div>
+</header>
+
+<section class="section-pad" style="padding-top:20px;">
+  <div class="wrap">
+
+    <!-- FEATURED PROJECT -->
+    <div class="featured">
+      <div class="card-header">
+        <span>Senior Design · XR Acoustophoretic Microbioreactor</span>
+        <span class="status">Status: Complete — May 2026</span>
+      </div>
+      <div class="featured-body">
+        <div>
+          <h2>Collaborative Tumor Treating Field R&amp;D</h2>
+          <p>Ranked #1 among selectable senior design projects for its potential to help cancer research. Within a 3-person team, I independently owned three of the four major subsystems.</p>
+          <p><strong style="color:var(--ink);">Electrode array</strong> — designed and validated to produce clinically relevant Tumor Treating Field intensities (1–3 V/cm), confirmed in COMSOL and on real hardware.</p>
+          <p><strong style="color:var(--ink);">Electrical Impedance Tomography</strong> — a low-cost imaging system (USB-6009, Digilent Explorer Board, MUX/DeMux switching) with custom MATLAB acquisition and EIDORS reconstruction, visualizing cellular electrical properties to enable personalized treatment planning. Working at the mV scale meant real-world noise — electrode drift, breadboard interference — limited image clarity, but the underlying reconstruction approach held up.</p>
+          <p><strong style="color:var(--ink);">AR Visualization</strong> — built in Blender for the Meta Quest 3, translating COMSOL particle-tracing and flow data into a space you can walk into, resize with your hands, and sit inside of, complete with in-experience tutorials.</p>
+          <p>I also modeled acoustic radiation force in COMSOL to tune cell-clustering frequency near the PZT's resonance, and built CAD models for the slide, electrode array, and field-test mechanism.</p>
+          <div class="tag-row">
+            <span class="tag">COMSOL</span>
+            <span class="tag">MATLAB</span>
+            <span class="tag">EIDORS</span>
+            <span class="tag">Blender</span>
+            <span class="tag">Meta Quest 3</span>
+            <span class="tag">SolidWorks</span>
+          </div>
+        </div>
+        <div class="carousel" id="xr-carousel">
+          <div class="carousel-viewport">
+            <div class="carousel-slide active">
+              <img src="assets/xr-solo-poster.jpeg" alt="Ethan presenting the XR Microbioreactor poster at the WNE Engineering Expo">
+              <div class="carousel-caption">Presenting at the WNE Engineering Expo</div>
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/xr-team-award.jpeg" alt="Team receiving 2nd place Senior Project Poster Presentation Award">
+              <div class="carousel-caption">2nd Place, Senior Project Poster Presentation Award</div>
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/xr-poster-only.jpeg" alt="XR Microbioreactor research poster">
+              <div class="carousel-caption">Full research poster</div>
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/xr-temple-presenting.jpeg" alt="Presenting the project with the team at NEBEC, Temple University">
+              <div class="carousel-caption">Presenting at NEBEC, Temple University</div>
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/xr-field-testing-setup.jpeg" alt="Electric field testing setup on the bench">
+              <div class="carousel-caption">Electric field testing setup</div>
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/xr-eit-setup.jpeg" alt="Electrical Impedance Tomography hardware setup">
+              <div class="carousel-caption">EIT hardware setup</div>
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/xr-current-pump-wiring.jpeg" alt="Current pump wiring on the breadboard">
+              <div class="carousel-caption">Current pump wiring</div>
+            </div>
+            <div class="carousel-slide">
+              <video src="assets/xr-tutorial-video.mp4" controls preload="metadata"></video>
+              <div class="carousel-caption">In-experience tutorial, rendered for Meta Quest 3</div>
+            </div>
+          </div>
+          <button class="carousel-btn carousel-prev" aria-label="Previous slide">&#8249;</button>
+          <button class="carousel-btn carousel-next" aria-label="Next slide">&#8250;</button>
+          <div class="carousel-dots"></div>
+        </div>
+      </div>
+      <div class="results-strip">
+        <div><strong>1st Place</strong>Biomedical Engineering Project, WNE Expo</div>
+        <div><strong>2nd Overall</strong>WNE Engineering Expo, all disciplines</div>
+        <div><strong>NEBEC</strong>Presented at Temple University</div>
+      </div>
+    </div>
+
+    <!-- PROJECT GRID -->
+    <div class="project-grid" style="margin-top:44px;">
+
+      <div class="card">
+        <div class="card-header"><span>Bioinstrumentation Honors Project</span><span class="status">Fall 2024</span></div>
+        <div class="card-body">
+          <img src="assets/ecg-breadboard.jpeg" alt="Breadboard build of the ECG simulator circuit">
+          <h3>A Remote Clinic ECG Simulator &amp; Calibration System</h3>
+          <p>A three-stage build for clinics with unreliable power and scarce electrodes: a TLC551 oscillator simulating sinus, bradycardia, and tachycardia rhythms; a resistor-ladder circuit producing a realistic 1 mV signal on a 300 mV bias; and a Butterworth bandstop filter cutting 60 Hz noise by 40.886 dB — beating the 40 dB target.</p>
+          <div class="tag-row">
+            <span class="tag">TLC551</span>
+            <span class="tag">LTspice</span>
+            <span class="tag">FilterPro</span>
+            <span class="tag">Circuit Design</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><span>Micro &amp; Nano Devices</span><span class="status">2024</span></div>
+        <div class="card-body">
+          <div class="carousel carousel-sm">
+            <div class="carousel-viewport">
+              <div class="carousel-slide active">
+                <img src="assets/posture-sensor.jpeg" alt="Skeletal Posture Sensor circuit build">
+                <div class="carousel-caption">Circuit build</div>
+              </div>
+              <div class="carousel-slide">
+                <video src="assets/posture-sensor-video.mp4" controls preload="metadata"></video>
+                <div class="carousel-caption">Demo — lean detection in action</div>
+              </div>
+            </div>
+            <button class="carousel-btn carousel-prev" aria-label="Previous slide">&#8249;</button>
+            <button class="carousel-btn carousel-next" aria-label="Next slide">&#8250;</button>
+            <div class="carousel-dots"></div>
+          </div>
+          <h3>Skeletal Posture Sensor</h3>
+          <p>A Wheatstone bridge circuit reading two conductive stretch sensors to detect lateral lean, zeroed with dual potentiometers. A bicolor LED array gave intuitive, real-time visual feedback — redder as the patient leaned further to either side.</p>
+          <div class="tag-row">
+            <span class="tag">Wheatstone Bridge</span>
+            <span class="tag">Sensor Design</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><span>First Year Smart Projects</span><span class="status">Spring 2023</span></div>
+        <div class="card-body">
+          <img src="assets/soccer-bot.jpeg" alt="RC Soccer Bot arena setup with two robots">
+          <h3>RC Soccer Bot</h3>
+          <p>Proposed and advocated for a ramp-based scoring design across a 7-person team: one bot controlled a ramp to reach the three-point goals while two others used plows to feed balls in. Resolved material-interference and ramp-sizing tradeoffs; the design was adopted and placed 2nd in competition.</p>
+          <div class="tag-row">
+            <span class="tag">Arduino</span>
+            <span class="tag">Mechanical Design</span>
+            <span class="tag">Team Leadership</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><span>Hartford Hospital Bone &amp; Joint Institute</span><span class="status">May 2025 — Aug 2026</span></div>
+        <div class="card-body">
+          <h3>Frailty, Recovery &amp; a Manuscript Under Review</h3>
+          <p>Invited by faculty advisor Dr. Matthew Solomito onto an ongoing clinical research program. Work progressed from pre/post-operative balance testing, to pitching biomechanics research, to authoring a manuscript from faculty-provided statistics:</p>
+          <p style="font-family:var(--mono); font-size:0.85rem; color:var(--ink-soft); border-left:2px solid var(--brass); padding-left:14px;">Michaud E, Solomito MJ, Davis S. "Frailty Score Predicts Peri-Hospital Recovery and Healthcare Utilization Following Surgical Treatment of Hip Fractures." <em>Journal of Orthopedic Trauma.</em> Under review.</p>
+          <p style="font-family:var(--mono); font-size:0.85rem; color:var(--ink-soft); border-left:2px solid var(--brass); padding-left:14px;">Michaud E, Solomito MJ, Davis S. "Frailty Score Predicts Peri-Hospital Recovery and Healthcare Utilization Following Surgical Treatment of Hip Fractures." Abstract submitted to <em>AAOS 2027 Annual Meeting.</em></p>
+          <div class="tag-row">
+            <span class="tag">Clinical Research</span>
+            <span class="tag">Stata</span>
+            <span class="tag">Manuscript</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="grid-column: 1 / -1;">
+        <div class="card-header"><span>Lean Six Sigma Yellow Belt · Medtronic</span><span class="status">May 2024 — May 2025</span></div>
+        <div class="card-body">
+          <h3>Operator Data-Entry Tool</h3>
+          <p>Identified a data-entry inefficiency on the manufacturing floor on my own initiative and designed an app-based solution using Power Apps, Power BI, Power Automate, and SharePoint Lists — presented to the team and certified as part of Yellow Belt training. The tool ultimately wasn't adopted, as management prioritized other floor issues at the time — a good reminder that a working solution and an approved one aren't always the same thing.</p>
+          <div class="tag-row">
+            <span class="tag">Power Apps</span>
+            <span class="tag">Power BI</span>
+            <span class="tag">Power Automate</span>
+            <span class="tag">SharePoint</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Ethan Michaud — Biomedical Engineering</span>
+    <span>Prospect, CT · Open to roles in Connecticut</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  document.querySelectorAll('.carousel').forEach(function (carousel) {
+    var slides = carousel.querySelectorAll('.carousel-slide');
+    var dotsWrap = carousel.querySelector('.carousel-dots');
+    var prevBtn = carousel.querySelector('.carousel-prev');
+    var nextBtn = carousel.querySelector('.carousel-next');
+    var index = 0;
+
+    slides.forEach(function (_, i) {
+      var dot = document.createElement('button');
+      dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+      if (i === 0) dot.classList.add('active');
+      dot.addEventListener('click', function () { go(i); });
+      dotsWrap.appendChild(dot);
+    });
+    var dots = dotsWrap.querySelectorAll('button');
+
+    function go(i) {
+      var video = slides[index].querySelector('video');
+      if (video) video.pause();
+      slides[index].classList.remove('active');
+      dots[index].classList.remove('active');
+      index = (i + slides.length) % slides.length;
+      slides[index].classList.add('active');
+      dots[index].classList.add('active');
+    }
+
+    prevBtn.addEventListener('click', function () { go(index - 1); });
+    nextBtn.addEventListener('click', function () { go(index + 1); });
+    carousel.setAttribute('tabindex', '0');
+    carousel.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowLeft') go(index - 1);
+      if (e.key === 'ArrowRight') go(index + 1);
+    });
+  });
+})();
+</script>
+</body>
+</html>
